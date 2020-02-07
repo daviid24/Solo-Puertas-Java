@@ -10,8 +10,7 @@ public class Fecha {
         ldFecha = ldFecha.withDayOfYear(dia);
         ldFecha = ldFecha.withMonth(mes);
         ldFecha = ldFecha.withYear(ano);
-        
-             
+    
         fecha = ldFecha.toString();
     }
 

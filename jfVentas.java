@@ -9,7 +9,7 @@ public class jfVentas extends javax.swing.JFrame {
     
     LocalDate date;
     Fecha objFecha = new Fecha();
-    Registro objRegistro = new Registro();
+
     
     
     public jfVentas() {
@@ -162,7 +162,7 @@ public class jfVentas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bGuardarActionPerformed
-        objRegistro.registroCaja(objFecha.getFecha(), Integer.parseInt(tfCodigo.getText()), listTipo.getSelectedValue().toString(), taDescripcion.getText(), Integer.parseInt(tfMonto.getText()));
+        //objRegistro.registroCaja(objFecha.getFecha(), Integer.parseInt(tfCodigo.getText()), listTipo.getSelectedValue().toString(), taDescripcion.getText(), Integer.parseInt(tfMonto.getText()));
 
     }//GEN-LAST:event_bGuardarActionPerformed
 
@@ -175,10 +175,7 @@ public class jfVentas extends javax.swing.JFrame {
     }//GEN-LAST:event_listTipoValueChanged
 
     private void bEjemploActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bEjemploActionPerformed
-        jfCalendario objCal = new jfCalendario();
-        jfEjemplos objEj = new jfEjemplos();
-        this.setVisible(false);
-        objEj.setVisible(true);
+
     }//GEN-LAST:event_bEjemploActionPerformed
 
     private void bVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVolverActionPerformed
